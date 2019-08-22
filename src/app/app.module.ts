@@ -1,3 +1,4 @@
+import { JsonMenuPage } from './../pages/json-menu/json-menu';
 import { Flashlight } from '@ionic-native/flashlight';
 import { FlashlightPage } from './../pages/flashlight/flashlight';
 import { ScannerPage } from './../pages/scanner/scanner';
@@ -19,7 +20,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
   declarations: [
     MyApp,
     HomePage,
-    ListPage,LoginPage,ScannerPage,FlashlightPage
+    ListPage,LoginPage,ScannerPage,FlashlightPage,JsonMenuPage
   ],
   imports: [
     BrowserModule,
@@ -29,11 +30,11 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage,LoginPage,ScannerPage,FlashlightPage
+    ListPage,LoginPage,ScannerPage,FlashlightPage,JsonMenuPage
   ],
   providers: [
     StatusBar,
-    SplashScreen, SMS,BarcodeScanner,Flashlight,
+    SplashScreen, SMS,BarcodeScanner,Flashlight,JsonMenuPage,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
